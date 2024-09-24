@@ -161,6 +161,32 @@ body {
   font-size: 14px;
 }
 
+/* FOOTER */
+
+.footer {
+  padding: 15px 0;
+  background-color: #232323;
+}
+
+.footer .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer .footer-links {
+  word-spacing: 5px;
+}
+
+.footer .footer-sx {
+  color: white;
+  line-height: 25px;
+}
+
+.footer .footer-button {
+  color: white;
+  line-height: 25px;
+}
+
 /* # CHANGE FIT */
 
 .product-card .card-img .second-fit {
