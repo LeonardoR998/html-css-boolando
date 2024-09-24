@@ -31,6 +31,45 @@ body {
   padding-left: 5px;
 }
 
+/* # HEADER */
+
+.upper-header {
+  padding: 15px 0;
+  background-color: #ff6900;
+}
+
+.header-img {
+  width: 150px;
+}
+
+.upper-header > .container {
+  display: flex;
+  align-items: center;
+}
+
+.upper-header .header-item {
+  flex-basis: 30%;
+  padding: 5px 10px;
+}
+
+.upper-header .nav-container {
+  flex-grow: 1;
+  color: white;
+  word-spacing: 20px;
+  cursor: pointer;
+}
+
+.upper-header .login-container {
+  text-align: right;
+}
+
+.upper-header .button-container {
+  color: white;
+  text-align: right;
+  cursor: pointer;
+  word-spacing: 5px;
+}
+
 /* #MAIN */
 
 .products > .container {
@@ -46,6 +85,7 @@ body {
 .products .product-card {
   flex: 1 0 30%;
   position: relative;
+  cursor: pointer;
 
   /* debug */
   /* background-color: black; */
@@ -84,7 +124,7 @@ body {
   font-size: 14px;
 }
 
-.product-card .card-wishlist {
+.product-card .wishlist-black {
   position: absolute;
   top: 20px;
   right: 0px;
@@ -93,4 +133,56 @@ body {
   font-size: 40px;
   background-color: white;
   text-align: center;
+}
+
+.product-card .wishlist-red {
+  position: absolute;
+  top: 20px;
+  right: 0px;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 40px;
+  background-color: white;
+  color: red;
+  text-align: center;
+}
+
+.product-card .card-banner-esprit {
+  position: absolute;
+  top: 600px;
+  left: 0px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: #008000;
+  color: white;
+  text-align: center;
+  font-size: 14px;
+}
+
+/* # CHANGE FIT */
+
+.product-card .card-img .second-fit {
+  display: none;
+}
+
+.product-card:hover .card-img .second-fit {
+  display: block;
+}
+
+.product-card:hover .card-img .first-fit {
+  display: none;
+}
+
+.product-card .card-wishlist .wishlist-red {
+  display: none;
+}
+
+.product-card:hover .card-wishlist .wishlist-red {
+  display: block;
+}
+
+.product-card:hover .card-wishlist .wishlist-black {
+  display: none;
 }
