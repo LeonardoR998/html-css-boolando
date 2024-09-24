@@ -1,0 +1,36 @@
+/* # RESET */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* # UTILS */
+
+.container {
+  margin: 0 auto;
+  padding: 0 10px;
+  width: 1000px;
+  max-width: 100%;
+}
+
+/* #MAIN */
+
+.products > .container {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  gap: 3rem;
+
+  padding: 5rem 0;
+}
+
+.products .product-card {
+  flex: 1 0 30%;
+
+  /* debug */
+  background-color: black;
+  min-height: 400px;
+}
